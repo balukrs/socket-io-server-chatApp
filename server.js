@@ -1,7 +1,6 @@
 const express = require("express");
 var cors = require("cors");
 const app = express();
-app.use(cors());
 
 const http = require("http");
 const server = http.createServer(app);
@@ -15,12 +14,9 @@ const {
   getUsersinroom,
 } = require("./users");
 
-const io = require("socket.io")(server, {
-  cors: {
-    origin: "https://master.d1kd7pgm0rmtuf.amplifyapp.com/",
-    credentials: true,
-  },
-});
+const io = require("socket.io")(server);
+
+app.use(cors());
 
 const PORT = process.env.PORT || 5000;
 
