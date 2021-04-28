@@ -1,5 +1,4 @@
 const express = require("express");
-var cors = require("cors");
 const app = express();
 
 const http = require("http");
@@ -21,8 +20,6 @@ const io = require("socket.io")(server, {
     credentials: true,
   },
 });
-
-app.use(cors());
 
 const PORT = process.env.PORT || 5000;
 
