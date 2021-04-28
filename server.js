@@ -15,7 +15,7 @@ const {
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: "*",
+    origin: "https://master.d1kd7pgm0rmtuf.amplifyapp.com",
     methods: ["GET", "POST"],
     credentials: true,
   },
