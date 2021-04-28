@@ -17,7 +17,7 @@ const {
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://master.d1kd7pgm0rmtuf.amplifyapp.com/",
     credentials: true,
   },
 });
