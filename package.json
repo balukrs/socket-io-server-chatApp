@@ -1,0 +1,20 @@
+{
+  "name": "socket-io-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Balu Krishna R",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.0.1"
+  },
+  "devDependencies": {
+    "moment": "^2.29.1"
+  }
+}
