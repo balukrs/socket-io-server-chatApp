@@ -14,7 +14,13 @@ const {
   getUsersinroom,
 } = require("./users");
 
-const io = require("socket.io")(server);
+const io = require("socket.io")(server, {
+  cors: {
+    origin: "https://master.d1kd7pgm0rmtuf.amplifyapp.com/",
+    methods: ["GET", "POST"],
+    credentials: true,
+  },
+});
 
 app.use(cors());
 
